@@ -1,6 +1,10 @@
 # typescript-vue-app [WiP]
 Demo app using Vue.js with Typescript. No specific purpose yet, just an exercise/PoC so far.
 
+## Notes
+Check out and install with ```npm install```.
+
+Start project with ```npm run serve```.
 
 ## Getting started with Vue and Typescript
 Good tutorials on getting started with Vue and Typescript
