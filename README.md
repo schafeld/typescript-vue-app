@@ -1,10 +1,21 @@
 # typescript-vue-app [WiP]
 Demo app using Vue.js with Typescript. No specific purpose yet, just an exercise/PoC so far.
 
-## Notes
+## Notes 
+### Development
 Check out and install with ```npm install```.
 
 Start project with ```npm run serve```.
+
+### Setup
+
+TailwindCSS set up and configured according to [docs](https://tailwindcss.com/docs/guides/vue-3-vite):
+
+```shell
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest 
+
+npx tailwindcss init -p
+```
 
 ## Getting started with Vue and Typescript
 Good tutorials on getting started with Vue and Typescript
