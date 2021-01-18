@@ -23,3 +23,5 @@ class TutorialDataService {
     return http.get(`/tutorials?title=${title}`);
   }
 }
+
+export default new TutorialDataService();
