@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav class="navbar navbar-expand navbar-dark bg-dark">
-      <a href="#" class="navbar-brand">Tutorials list</a>
+      <a href="/" class="navbar-brand">Tutorials Listing</a>
       <div class="navbar-nav mr-auto">
         <li class="nav-item">
           <a href="/tutorials" class="nav-link">Tutorials</a>
