@@ -21,11 +21,11 @@ const routes: Array<RouteConfig> = [
   //   name: "tutorial-details",
   //   component: () => import("../components/Tutorial.vue")
   // },
-  // {
-  //   path: "/add",
-  //   name: "add",
-  //   component: () => import("../components/AddTutorial.vue")
-  // }
+  {
+    path: "/add",
+    name: "add",
+    component: () => import("../components/AddTutorial.vue")
+  }
 ];
 
 const router = new VueRouter({
