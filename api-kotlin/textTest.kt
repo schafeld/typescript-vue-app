@@ -1,19 +1,36 @@
 // kotlinc textTest.kt -include-runtime -d textTest.jar
 // java -jar textTest.jar
 
+/**
+Infix function
+ */
+ fun main(args: Array<String>) {
+     val h1 = Header("H1")
+     val h2 = Header("H2")
+
+     val h3 = h1 plus h2
+
+     println(h3.Name)
+ }
+
+ class Header(var Name: String) {}
+
+ infix fun Header.plus(other: Header) : Header {
+     return Header(this.Name + other.Name)
+ }
 
 /**
 *  Call a function.
 *  Check if arguments given.
 */
-fun main(args: Array<String>) {
-    var message: String = if (args.size != 0) { args[0] } else { "Hello Olli!" }
-    display(message)
-}
-fun display(message: String) : Boolean{
-    println(message)
-    return true
-}
+// fun main(args: Array<String>) {
+//     var message: String = if (args.size != 0) { args[0] } else { "Hello Olli!" }
+//     display(message)
+// }
+// fun display(message: String) : Boolean{
+//     println(message)
+//     return true
+// }
 
 /**
 *  Iterate over TreeMap
