@@ -2,24 +2,41 @@
 // java -jar textTest.jar
 
 /**
-Infix function
+ *  Sum list 
  */
- fun main(args: Array<String>) {
-     val h1 = Header("H1")
-     val h2 = Header("H2")
+fun sum(list: List<Int>): Int {
+    var result = 0
+    for (i in list) {
+        result += i
+    }
+    return result
+}
 
-     val h3 = h1 plus h2
-     println(h3.Name)
+fun main(args: Array<String>) {
+    val sum = sum(listOf(1, 2, 3))
+    println(sum)    // 6
+}
 
-     val h4 = h1 + h2
-     println(h4.Name)
- }
 
- class Header(var Name: String) {}
+/**
+ * Infix function
+ */
+//  fun main(args: Array<String>) {
+//      val h1 = Header("H1")
+//      val h2 = Header("H2")
 
- operator infix fun Header.plus(other: Header) : Header {
-     return Header(this.Name + other.Name)
- }
+//      val h3 = h1 plus h2
+//      println(h3.Name)
+
+//      val h4 = h1 + h2
+//      println(h4.Name)
+//  }
+
+//  class Header(var Name: String) {}
+
+//  operator infix fun Header.plus(other: Header) : Header {
+//      return Header(this.Name + other.Name)
+//  }
 
 /**
 *  Call a function.
