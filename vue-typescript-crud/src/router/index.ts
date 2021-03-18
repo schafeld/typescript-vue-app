@@ -8,7 +8,8 @@ const routes: Array<RouteConfig> = [
     path: "/",
     alias: "/home",
     name: "homepage",
-    component: () => import("../App.vue")
+    // component: () => import("../App.vue")
+    component: () => import("../components/HelloWorld.vue")
   },
   // {
   //   path: "/",
